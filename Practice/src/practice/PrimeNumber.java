@@ -7,12 +7,14 @@ public class PrimeNumber {
 		int num=25;
 		for(int i=2;i<num;i++)
 		{
-			if(num%i==0)
+			if(num%i!=0)
 			{
-				System.out.println(num+" is not prime number");
+				System.out.println(num+" is  prime number");
+				return;
 			}
 
 		}
+		System.out.println(num+" is not prime number");
 	}
 
 }
