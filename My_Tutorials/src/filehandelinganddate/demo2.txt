@@ -1,0 +1,6 @@
+
+directly writing data in file without converting in byte stream
+directly writing data in file without converting in byte stream
+directly writing data in file without converting in byte stream
+directly writing data in file without converting in byte stream
+directly writing data in file without converting in byte stream
