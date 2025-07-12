@@ -10,10 +10,10 @@ public class LocaldatetimeTest {
 
 		System.out.println(ldt);
 		System.out.println(ldt.getYear());
-		System.out.println(ldt.get);
-		System.out.println(ldt);
-		System.out.println(ldt);
-		System.out.println(ldt);
+		System.out.println(ldt.getDayOfMonth());
+		System.out.println(ldt.getDayOfYear());
+		System.out.println(ldt.getHour());
+		System.out.println(ldt.getMinute());
 	}
 
 }
