@@ -10,7 +10,7 @@ public class LocaldatetimeTest {
 
 		System.out.println(ldt);
 		System.out.println(ldt.getYear());
-		System.out.println(ldt.get);
+		
 		System.out.println(ldt);
 		System.out.println(ldt);
 		System.out.println(ldt);
