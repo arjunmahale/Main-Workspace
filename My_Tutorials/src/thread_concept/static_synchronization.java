@@ -1,6 +1,6 @@
 package thread_concept;
 
-//Locks on the class, not on object.
+//static synchronizes method->Locks on the class, not on object.
 
 //Used when multiple objects are accessing the same static resource.
 
