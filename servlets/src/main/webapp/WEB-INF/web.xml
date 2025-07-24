@@ -29,4 +29,30 @@
   <servlet-name>FormServlet</servlet-name>
   <url-pattern>/FormServlet</url-pattern>
   </servlet-mapping>
+
+
+  <servlet>
+  <servlet-name>ConfigServlet</servlet-name>
+  <servlet-class>servletconfigdemo.ConfigServlet</servlet-class>
+
+  <init-param>
+  	<param-name>name</param-name>
+  	<param-value>Arjun</param-value>
+  </init-param>
+  <init-param>
+  	<param-name>id</param-name>
+  	<param-value>1</param-value>
+  </init-param>
+  </servlet>
+
+  <servlet-mapping>
+  <servlet-name>ConfigServlet</servlet-name>
+  <url-pattern>/ConfigServlet</url-pattern>
+  </servlet-mapping>
+
+
+<context-param>
+<param-name>websitename</param-name>
+<param-value>a2z</param-value>
+</context-param>
 </web-app>
