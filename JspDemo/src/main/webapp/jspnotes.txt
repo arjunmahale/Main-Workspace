@@ -1,0 +1,70 @@
+<!--
+
+
+    Scripting Tags or Scripting elements
+write a java code into html code
+1. script let tag
+	💡 1. Scriptlet Tag (<% ... %>)
+<html>
+<body>
+    <%
+        int a = 10;
+        int b = 20;
+        int sum = a + b;
+    %>
+    <p>Sum is: <%= sum %></p>
+</body>
+</html>
+
+we cannot declare method in script let
+2. declaration tag
+
+💡 2. Declaration Tag ...... %>)
+<html>
+<body>
+   int multiply(int x, int y) {
+		return x * y;
+	}    %>
+    <%
+        int result = multiply(5, 4);
+    %>
+    <p>Multiplication is: <%= result %></p>
+</body>
+</html>
+
+here we can declared method
+3. expression tag
+
+💡 3. Expression Tag (<%= ... %>)
+<html>
+<body>
+    <p>The current time is: <%= new java.util.Date() %></p>
+</body>
+</html>
+
+print something */
+ -->
+
+
+ <h1>first jsp page</h1>
+
+//1.Scriptlet Tag
+<p><% int a=10;
+	out.println(a);
+
+%></p>
+
+
+//declaration tag
+<%!
+ public String show()
+ {
+	System.out.print("Declaration tag");
+ }
+%>
+
+
+//expression tag
+<h1><%=a %></h1>
+<h2><%=show() %></h2>
+
