@@ -1,0 +1,12 @@
+1]scripting tags: used to write the java code
+
+scriptlet: <% %>
+declarative: <%! %>
+expression: <%= %>
+
+2]directive tags:to get another resources into your current resource
+
+1.include
+2.page
+3.taglib
+

@@ -11,7 +11,8 @@
 <h2><% out.print("sdf"); %></h2>
 <h2><% int n=request.getServerPort(); %></h2>
 <h3><%=n %>
-<%response.sendRedirect("index"); %>   
+<%response.sendRedirect("ind"); %>
+<%application.setAttribute("dbname", "postgres"); %>
 </h3>
 </body>
 </html>

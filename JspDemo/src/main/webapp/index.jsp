@@ -9,7 +9,7 @@
 </head>
 <body>
 <h1>first jsp page</h1>
-
+<%=application.getAttribute("dbname") %>
 <h2>scriptlet tag</h2>
 <p><% int a=10;
 	out.println(a);
