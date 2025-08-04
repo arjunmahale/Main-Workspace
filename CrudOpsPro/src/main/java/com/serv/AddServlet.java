@@ -45,12 +45,17 @@ public class AddServlet extends HttpServlet {
 
         String fileName = Paths.get(partfile.getSubmittedFileName()).getFileName().toString();
 
-        String projectPath = "C:\\Users\\HP\\eclipse-workspace\\Main-Workspace\\CrudOpsPro\\src\\main\\webapp\\images";
+        String projectPath = "C:\\Users\\Admin\\Documents\\GitHub\\Main-Workspace\\CrudOpsPro\\src\\main\\webapp\\images";
 //        File uploadDir = new File(projectPath);
 //        if (!uploadDir.exists()) uploadDir.mkdirs();
 
+
         String savePath = projectPath + File.separator + fileName;
         partfile.write(savePath); // ✅ Uploads the file to target folder
+        
+        String realPath = getServletContext().getRealPath("/images");
+        String savePath2 = realPath + File.separator + fileName;
+        partfile.write(savePath2);
 
         Student student = new Student(sname, smobile, sclass, semail, fileName);
         int result = DBConnection.addstudent(student);

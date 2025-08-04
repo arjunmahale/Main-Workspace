@@ -8,7 +8,7 @@
 	<classpathentry kind="src" path="src/main/java"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
-	<classpathentry kind="lib" path="C:/Users/HP/Downloads/java_essentials/jdbc+servlet_jars/jakarta.servlet-api-5.0.0.jar"/>
-	<classpathentry kind="lib" path="C:/Users/HP/Downloads/java_essentials/jdbc+servlet_jars/mysql-connector-j-9.3.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Admin/Downloads/java_jars_and_other/jakarta.servlet-api-5.0.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Admin/Downloads/java_jars_and_other/mysql-connector-j-9.0.0.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

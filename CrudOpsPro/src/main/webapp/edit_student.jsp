@@ -23,6 +23,8 @@
     <h1 class="text-center mb-4">Student Information</h1>
 
     <form action="EditStudentServlet" method="post" class="mx-auto w-50" enctype="multipart/form-data">
+    
+     <input type="hidden" name="id" class="form-control" value=<%=request.getParameter("id") %> >
       <div class="mb-3">
         <label class="form-label">Enter Name:</label>
         <input type="text" name="sname" class="form-control" value=<%=student.getSname() %>  required>

@@ -9,25 +9,30 @@
     <welcome-file>default.jsp</welcome-file>
     <welcome-file>default.htm</welcome-file>
   </welcome-file-list>
-
   <servlet>
-  <servlet-name>form</servlet-name>
-<jsp-file>/form.jsp</jsp-file>
-
-</servlet>
-<servlet-mapping>
-	<servlet-name>form</servlet-name>
-	<url-pattern>/form</url-pattern>
-</servlet-mapping>
-
-
+    <servlet-name>form</servlet-name>
+    <jsp-file>/form.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>form</servlet-name>
+    <url-pattern>/form</url-pattern>
+  </servlet-mapping>
   <servlet>
-  <servlet-name>show</servlet-name>
-<jsp-file>/show.jsp</jsp-file>
-
-</servlet>
-<servlet-mapping>
-	<servlet-name>show</servlet-name>
-	<url-pattern>/show</url-pattern>
-</servlet-mapping>
+    <servlet-name>show</servlet-name>
+    <jsp-file>/show.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>show</servlet-name>
+    <url-pattern>/show</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>EditStudentServlet</display-name>
+    <servlet-name>EditStudentServlet</servlet-name>
+    <servlet-class>com.serv.EditStudentServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EditStudentServlet</servlet-name>
+    <url-pattern>/EditStudentServlet</url-pattern>
+  </servlet-mapping>
 </web-app>

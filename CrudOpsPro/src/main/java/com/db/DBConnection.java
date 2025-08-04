@@ -29,7 +29,7 @@ public class DBConnection {
 		int result = 0;
 		try {
 			Connection con = getconnection();
-			String query = "INSERT INTO student_data (sname, smobile, sclass, semail,image) VALUES (?,?, ?, ?, ?)";
+			String query = "insert into student_data (sname, smobile, sclass, semail,image) VALUES (?,?, ?, ?, ?)";
 
 			PreparedStatement stmt = con.prepareStatement(query);
 			stmt.setString(1, student.getSname());
@@ -37,6 +37,7 @@ public class DBConnection {
 			stmt.setString(3, student.getSclass());
 			stmt.setString(4, student.getSemail());
 			stmt.setString(5, student.getSimage());
+			
 
 			result = stmt.executeUpdate();
 
@@ -48,18 +49,22 @@ public class DBConnection {
 	}
 
 	//update student method
-	public static int updatestudent(Student student) {
+	public static int updatestudent(Student student,String id) {
 		int result = 0;
 		try {
 			Connection con = getconnection();
-			String query = "update student_data set sname=?, smobile=?, sclass=?, semail=?  where id=?";
+			String query = "UPDATE student_data\r\n"
+					+ "SET sname = ?, smobile = ?, sclass = ?, semail = ?, image = ?\r\n"
+					+ "WHERE id = ?;\r\n"
+					+ "";
 
 			PreparedStatement stmt = con.prepareStatement(query);
 			stmt.setString(1, student.getSname());
 			stmt.setString(2, student.getSmobile());
 			stmt.setString(3, student.getSclass());
 			stmt.setString(4, student.getSemail());
-
+			stmt.setString(5, student.getSimage());
+			stmt.setNString(6, id);
 			result = stmt.executeUpdate();
 
 		} catch (SQLException e) {
