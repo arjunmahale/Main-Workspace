@@ -13,7 +13,7 @@
 
 <ul>
 
-<li><a href="form">add student</a></li>
+<li> <button><a href="form">add student</a></button></li>
 <li><a href="show">show students</a></li>
 </ul>
 

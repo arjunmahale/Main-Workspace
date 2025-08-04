@@ -6,13 +6,22 @@ public class Student {
 	private String smobile;
 	private String sclass;
 	private String semail;
-	public Student(String sname, String smobile, String sclass, String semail) {
+	private String simage;
+
+
+	public Student() {
+		super();
+	}
+
+	public Student(String sname, String smobile, String sclass, String semail, String simage) {
 		super();
 		this.sname = sname;
 		this.smobile = smobile;
 		this.sclass = sclass;
 		this.semail = semail;
+		this.simage = simage;
 	}
+
 	public String getSname() {
 		return sname;
 	}
@@ -37,9 +46,19 @@ public class Student {
 	public void setSemail(String semail) {
 		this.semail = semail;
 	}
+
+	public String getSimage() {
+		return simage;
+	}
+
+	public void setSimage(String simage) {
+		this.simage = simage;
+	}
+
 	@Override
 	public String toString() {
-		return "Student [sname=" + sname + ", smobile=" + smobile + ", sclass=" + sclass + ", semail=" + semail + "]";
+		return "Student [sname=" + sname + ", smobile=" + smobile + ", sclass=" + sclass + ", semail=" + semail
+				+ ", simage=" + simage + "]";
 	}
 
 
